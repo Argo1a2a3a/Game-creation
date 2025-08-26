@@ -1,7 +1,8 @@
-from cave import Cave
-cavern = Cave("Cavern")
-cavern.set_description("A dank and dirty cave ")
-dungeon = Cave("Dungeon")
-dungeon.set_description("A large cave with a rack")
-grotto = Cave("Grotto")
-grotto.set_description("A small cave with ancient graffiti")
+# Import the main game loop function from the game module
+from game import game_loop
+
+# Standard Python idiom to ensure code only runs when this file is executed directly
+# and not when it is imported as a module in another file
+if __name__ == "__main__":
+    # Start the game by calling the main game loop
+    game_loop()
